@@ -1,0 +1,14 @@
+{
+  "name": "saltedge",
+  "version": "1.0.0",
+  "description": "saltedgetask",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass sass/main.scss css/style.css --watch"
+  },
+  "author": "Oleg Gabureac",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.15.2"
+  }
+}

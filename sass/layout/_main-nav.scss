@@ -1,0 +1,40 @@
+.header {
+  width: 100%;
+  z-index: 1;
+  @include ifBiggerThan($bp-small) {
+    position: fixed;
+    top: 0;
+  }
+}
+
+.main-nav {
+  max-width: 114rem;
+  margin: 0 auto;
+  background-color: #999;
+  @include ifBiggerThan($bp-small) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 2rem;
+    color: #fff;
+    width: 100%;
+    border-bottom: 3px solid orange;
+
+    @include ifBiggerThan($bp-small) {
+      border-bottom: none;
+      width: auto;
+    }
+  }
+}
+
+.nav-container {
+  list-style: none;
+
+  @include ifBiggerThan($bp-small) {
+    display: flex;
+  }
+}
